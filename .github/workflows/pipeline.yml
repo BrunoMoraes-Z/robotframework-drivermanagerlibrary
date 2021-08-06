@@ -41,19 +41,20 @@ jobs:
       - name: Install Depencies
         run: |
           ls
-          python -m pip install -r requirements.txt
           python -m pip install -r example/requirements.txt
           python -m pip freeze
 
       - name: Run test
         run: |
+          ls
           robot -d results .
+          ls
         
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v2.2.4
         if: always()
         with:
           name: results-${{ matrix.os }}
-          path: /results
+          path: results
         
               
