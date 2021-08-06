@@ -22,10 +22,14 @@ jobs:
 
       - name: Setup Edge Browser
         uses: browser-actions/setup-edge@latest
+        
+      - name: Print Edge version
         run: (Get-Item (Get-Command msedge).Source).VersionInfo.ProductVersion
 
       - name: Setup Chrome Browser
         uses: browser-actions/setup-chrome@latest
+        
+      - name: Print Chrome version
         run: chrome --version
 
       # #TODO fix compatibility
