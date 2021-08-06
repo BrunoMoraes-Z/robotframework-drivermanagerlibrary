@@ -11,6 +11,8 @@ Open Chrome Browser
     ...    DriverManagerLibrary
     ...    driver_name=chrome
     ...    drivers_path=${CURDIR}${/}..${/}resources${/}drivers
+    Log  ${BROWSER_NAME}
+    Log  ${EXECUTABLE_PATH}
     Open Browser
     ...    ${URL}
     ...    ${BROWSER_NAME}
@@ -22,6 +24,8 @@ Open Edge Browser
     ...    DriverManagerLibrary
     ...    driver_name=edge
     ...    drivers_path=${CURDIR}${/}..${/}resources${/}drivers
+    Log  ${BROWSER_NAME}
+    Log  ${EXECUTABLE_PATH}
     Open Browser
     ...    ${URL}
     ...    ${BROWSER_NAME}
