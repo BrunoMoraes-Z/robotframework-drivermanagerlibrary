@@ -1,0 +1,7 @@
+output
+results
+.vscode
+
+**/resources/drivers/*
+!**/resources/drivers/.gitkeep
+**/__pycache__

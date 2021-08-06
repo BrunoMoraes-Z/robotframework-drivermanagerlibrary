@@ -1,0 +1,4 @@
+robotframework
+robotframework-seleniumlibrary
+webdriver-manager
+git+https://github.com/BrunoMoraes-Z/robotframework-drivermanagerlibrary@master
