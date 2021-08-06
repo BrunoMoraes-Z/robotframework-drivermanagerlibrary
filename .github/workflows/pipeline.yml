@@ -10,6 +10,7 @@ jobs:
     strategy:
       matrix:
         os: [windows-latest]
+        # #TODO fix compatibility
         # os: [windows-latest, macos-latest, ubuntu-latest]
 
     steps:
@@ -25,8 +26,9 @@ jobs:
       - name: Setup Chrome Browser
         uses: browser-actions/setup-chrome@latest
 
-      - name: Setup FireFox Browser
-        uses: browser-actions/setup-firefox@latest
+      # #TODO fix compatibility
+      # - name: Setup FireFox Browser
+      #   uses: browser-actions/setup-firefox@latest
 
       - uses: actions/checkout@v2
           
