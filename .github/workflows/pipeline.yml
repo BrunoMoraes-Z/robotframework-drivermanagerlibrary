@@ -9,8 +9,8 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [ubuntu-latest]
-        # os: [windows-latest]
+        # os: [ubuntu-latest]
+        os: [windows-latest]
         # #TODO fix compatibility
         # os: [windows-latest, macos-latest, ubuntu-latest]
 
@@ -49,9 +49,7 @@ jobs:
 
       - name: Run test
         run: |
-          ls
           robot -d results .
-          ls
         
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v2.2.4
