@@ -9,7 +9,8 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [windows-latest]
+        os: [ubuntu-latest]
+        # os: [windows-latest]
         # #TODO fix compatibility
         # os: [windows-latest, macos-latest, ubuntu-latest]
 
@@ -21,9 +22,11 @@ jobs:
           architecture: 'x64'
 
       - name: Setup Edge Browser
+        if: ${{ matrix.os == 'windows-latest' }}
         uses: browser-actions/setup-edge@latest
         
       - name: Print Edge version
+        if: ${{ matrix.os == 'windows-latest' }}
         run: (Get-Item (Get-Command msedge).Source).VersionInfo.ProductVersion
 
       - name: Setup Chrome Browser
