@@ -7,8 +7,8 @@ import subprocess
 
 import requests
 
-from DriverManagerLibrary.driver_manager.archive import Archive
-from DriverManagerLibrary.driver_manager.logger import log
+from .archive import Archive
+from .logger import log
 
 
 class File(object):

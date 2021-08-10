@@ -1,9 +1,9 @@
 import logging
 import os
 
-from DriverManagerLibrary.driver_manager import utils
-from DriverManagerLibrary.driver_manager.driver import OperaDriver
-from DriverManagerLibrary.driver_manager.manager import DriverManager
+from . import utils
+from .driver import OperaDriver
+from .manager import DriverManager
 
 
 class OperaDriverManager(DriverManager):

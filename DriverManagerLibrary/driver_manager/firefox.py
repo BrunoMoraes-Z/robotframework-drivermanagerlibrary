@@ -1,9 +1,9 @@
 import logging
 
-from DriverManagerLibrary.driver_manager import utils
-from DriverManagerLibrary.driver_manager.driver import GeckoDriver
-from DriverManagerLibrary.driver_manager.manager import DriverManager
-from DriverManagerLibrary.driver_manager.logger import log
+from . import utils
+from .driver import GeckoDriver
+from .manager import DriverManager
+from .logger import log
 
 
 class GeckoDriverManager(DriverManager):

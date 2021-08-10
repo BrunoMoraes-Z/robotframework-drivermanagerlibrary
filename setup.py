@@ -13,6 +13,9 @@ setup(
     install_requires=[
         'robotframework',
         'robotframework-seleniumlibrary',
-        'webdriver-manager'
+        # 'webdriver-manager',
+        'requests',
+        'configparser',
+        'crayons'
     ]
 )

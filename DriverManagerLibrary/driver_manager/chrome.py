@@ -1,11 +1,11 @@
 import logging
 import os
 
-from DriverManagerLibrary.driver_manager import utils
-from DriverManagerLibrary.driver_manager.driver import ChromeDriver
-from DriverManagerLibrary.driver_manager.logger import log
-from DriverManagerLibrary.driver_manager.manager import DriverManager
-from DriverManagerLibrary.driver_manager.utils import ChromeType
+from . import utils
+from .driver import ChromeDriver
+from .logger import log
+from .manager import DriverManager
+from .utils import ChromeType
 
 class ChromeDriverManager(DriverManager):
     def __init__(self, version="latest",

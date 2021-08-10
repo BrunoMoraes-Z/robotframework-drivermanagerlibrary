@@ -1,7 +1,7 @@
-from DriverManagerLibrary.driver_manager import utils
-from DriverManagerLibrary.driver_manager.driver import EdgeChromiumDriver
-from DriverManagerLibrary.driver_manager.driver import IEDriver
-from DriverManagerLibrary.driver_manager.manager import DriverManager
+from . import utils
+from .driver import EdgeChromiumDriver
+from .driver import IEDriver
+from .manager import DriverManager
 
 
 class IEDriverManager(DriverManager):

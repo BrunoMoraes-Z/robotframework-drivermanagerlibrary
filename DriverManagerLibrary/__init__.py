@@ -1,15 +1,15 @@
 from robot.libraries.BuiltIn import BuiltIn
 from robot.api.deco import keyword, library
 
-# from DriverManagerLibrary.driver_manager.chrome import ChromeDriverManager
-# from DriverManagerLibrary.driver_manager.firefox import GeckoDriverManager
-# from DriverManagerLibrary.driver_manager.microsoft import EdgeChromiumDriverManager
-# from DriverManagerLibrary.driver_manager.opera import OperaDriverManager
+from .driver_manager.chrome import ChromeDriverManager
+from .driver_manager.firefox import GeckoDriverManager
+from .driver_manager.microsoft import EdgeChromiumDriverManager
+from .driver_manager.opera import OperaDriverManager
 
-from webdriver_manager.chrome import ChromeDriverManager
-from webdriver_manager.firefox import GeckoDriverManager
-from webdriver_manager.microsoft import EdgeChromiumDriverManager
-from webdriver_manager.opera import OperaDriverManager
+# from webdriver_manager.chrome import ChromeDriverManager
+# from webdriver_manager.firefox import GeckoDriverManager
+# from webdriver_manager.microsoft import EdgeChromiumDriverManager
+# from webdriver_manager.opera import OperaDriverManager
 
 import os
 import json

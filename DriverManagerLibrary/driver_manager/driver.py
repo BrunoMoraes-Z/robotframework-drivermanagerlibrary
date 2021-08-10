@@ -5,8 +5,8 @@ from xml.etree import ElementTree
 import requests
 import platform
 
-from DriverManagerLibrary.driver_manager.logger import log
-from DriverManagerLibrary.driver_manager.utils import (
+from .logger import log
+from .utils import (
     validate_response,
     chrome_version,
     ChromeType,

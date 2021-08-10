@@ -1,8 +1,8 @@
 import os
 
-from DriverManagerLibrary.driver_manager.driver_cache import DriverCache
-from DriverManagerLibrary.driver_manager.logger import log
-from DriverManagerLibrary.driver_manager.utils import download_file
+from .driver_cache import DriverCache
+from .logger import log
+from .utils import download_file
 
 
 class DriverManager(object):
