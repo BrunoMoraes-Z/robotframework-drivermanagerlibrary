@@ -22,6 +22,7 @@ jobs:
           pip install -r example/requirements.txt
       
       - name: run example
+        continue-on-error: true
         run: |
           cd example
           robot -d results .
@@ -29,4 +30,4 @@ jobs:
       - name: Upload Artifact
         uses: actions/upload-artifact@v2.2.4
         with:
-          path: example/results/*
+          path: example/*
