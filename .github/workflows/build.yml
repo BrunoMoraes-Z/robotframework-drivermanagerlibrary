@@ -16,11 +16,14 @@ jobs:
 
       - uses: browser-actions/setup-chrome@latest
 
-      - name: run example
+      - name: install dependencies
 
         run: |
+          pip install -r example/requirements.txt
+      
+      - name: run example
+        run: |
           cd example
-          pip install -r requirements.txt
           robot -d results .
 
       - name: Upload Artifact
