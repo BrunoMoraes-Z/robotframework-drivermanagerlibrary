@@ -1,0 +1,29 @@
+name: 'build-test'
+
+on:
+  workflow_dispatch:
+  push:
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: actions/setup-python@v2.3.1
+
+      - uses: browser-actions/setup-chrome@latest
+
+      - name: run example
+
+        run: |
+          cd example
+          pip install -r requirements.txt
+          robot -d results .
+
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v2.2.4
+        with:
+          path: example/results/*
